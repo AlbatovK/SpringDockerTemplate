@@ -1,4 +1,4 @@
-FROM gradle:8.3-jdk17-alpine as builder
+FROM gradle:8.3-jdk-17-alpine as builder
 USER root
 WORKDIR /builder
 ADD . /builder
