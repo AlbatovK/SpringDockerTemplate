@@ -1,0 +1,32 @@
+server:
+  port: 8080
+
+spring:
+
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://dpg-ckq1v605vl2c73d7ufc0-a.oregon-postgres.render.com:5432/postgre_db_mdy0
+    username: albatros
+    password: "UTHkndH07S5ZUqcc9LtDpPvO6JzZgBRB"
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
+    show-sql: true
+    database: postgresql
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+logging:
+  level:
+    org.hibernate.type.descriptor.sql: trace
