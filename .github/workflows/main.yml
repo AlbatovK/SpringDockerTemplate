@@ -26,8 +26,6 @@ jobs:
         run: ./gradlew detekt
       - name: Run KtLint
         run: ./gradlew ktlintcheck
-      - name: Run custom gradle plugin
-        run: ./gradlew generateProjectStatistic
 
       - name: Upload Detekt report
         uses: actions/upload-artifact@v2
