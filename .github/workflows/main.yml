@@ -41,12 +41,6 @@ jobs:
           name: ktlint_report
           path: ${{ github.workspace }}/build/reports/ktlint/ktlintMainSourceSetCheck/ktlintMainSourceSetCheck.html
 
-      - name: Upload custom plugin output
-        uses: actions/upload-artifact@v2
-        with:
-          name: plugin_statistic
-          path: ${{ github.workspace }}/build/output/statistic.json
-
 
   build:
     runs-on: ubuntu-latest
