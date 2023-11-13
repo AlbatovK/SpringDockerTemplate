@@ -11,16 +11,16 @@ class SpringtemplateApplication
 
 @RestController
 class Controller {
-	@GetMapping("/hi")
-	fun getHi() = atmRepository.findAll()
+    @GetMapping("/hi")
+    fun getHi() = atmRepository.findAll()
 
-	@GetMapping("/a")
-	fun getAi() = atmRepository.save(Atm())
+    @GetMapping("/a")
+    fun getAi() = atmRepository.save(Atm())
 
-	@Autowired
-	lateinit var atmRepository: AtmRepository
+    @Autowired
+    lateinit var atmRepository: AtmRepository
 }
 
 fun main(args: Array<String>) {
-	runApplication<SpringtemplateApplication>(*args)
+    runApplication<SpringtemplateApplication>(*args)
 }

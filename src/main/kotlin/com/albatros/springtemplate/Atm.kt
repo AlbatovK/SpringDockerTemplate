@@ -1,6 +1,5 @@
 package com.albatros.springtemplate
 
-
 import javax.persistence.Entity
 import javax.persistence.Id
 
