@@ -6,7 +6,7 @@ import javax.persistence.Id
 @Entity(name = "atm")
 class Atm {
     @Id
-    var address: String? = "a"
+    var address: String? = "Id"
     var latitude = 0.0
     var longitude = 0.0
     var allDay = false

@@ -1,5 +1,6 @@
 package com.albatros.springtemplate
 
+import io.swagger.v3.core.model.ApiDescription
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -19,6 +20,10 @@ class Controller {
 
     @Autowired
     lateinit var atmRepository: AtmRepository
+}
+
+fun apied() {
+
 }
 
 fun main(args: Array<String>) {
