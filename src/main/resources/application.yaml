@@ -2,7 +2,6 @@ server:
   port: 8080
 
 spring:
-
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
@@ -26,6 +25,11 @@ spring:
         jdbc:
           lob:
             non_contextual_creation: true
+
+    liquibase:
+      enabled: false
+      drop-first: false
+      default-schema: public
 
 logging:
   level:
