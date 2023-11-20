@@ -29,6 +29,8 @@ dependencies {
     implementation("org.springdoc:springdoc-openapi-ui:1.6.0")
     implementation("org.springdoc:springdoc-openapi-kotlin:1.6.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
+    implementation("org.springframework.boot:spring-boot-starter-data-redis")
+    implementation("org.springframework.boot:spring-boot-starter-cache")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     /* implementation("org.liquibase:liquibase-core") */
     runtimeOnly("org.postgresql:postgresql")

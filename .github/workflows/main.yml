@@ -25,7 +25,7 @@ jobs:
       - name: Run Detekt
         run: ./gradlew detekt
       - name: Run KtLint
-        run: ./gradlew ktlintcheck
+        run: ./gradlew ktlintcheckфыв
 
       - name: Upload Detekt report
         uses: actions/upload-artifact@v2

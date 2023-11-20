@@ -6,6 +6,18 @@ springdoc:
     operationsSorter: method
 
 spring:
+
+  cache:
+    type: redis
+    cache-null-values: true
+    time-to-live: 40000
+
+  redis:
+    ssl:
+      enabled: true
+
+    url: redis://default:9f9f10fb5a074d46aa1314be49ca2dbd@eu2-striking-mink-31589.upstash.io:31589
+
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
