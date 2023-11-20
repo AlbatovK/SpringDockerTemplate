@@ -1,4 +1,4 @@
-package com.albatros.springtemplate
+package com.albatros.springtemplate.configuration
 
 import io.swagger.v3.oas.models.ExternalDocumentation
 import io.swagger.v3.oas.models.OpenAPI
