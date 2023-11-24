@@ -9,6 +9,18 @@ plugins {
     kotlin("plugin.spring") version "1.8.22"
     id("io.gitlab.arturbosch.detekt") version "1.23.3"
     id("org.jlleitschuh.gradle.ktlint") version "11.0.0"
+
+    kotlin("plugin.noarg") version "1.9.10"
+    kotlin("plugin.jpa") version "1.9.10"
+    kotlin("plugin.allopen") version "1.9.10"
+}
+
+allOpen {
+    annotations(
+        "javax.persistence.Entity",
+        "javax.persistence.Embeddable",
+        "javax.persistence.MappedSuperclass"
+    )
 }
 
 group = "com.albatros"
@@ -31,6 +43,9 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.boot:spring-boot-starter-data-redis")
     implementation("org.springframework.boot:spring-boot-starter-cache")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
+    implementation("org.codehaus.jackson:jackson-xc:1.9.9")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     /* implementation("org.liquibase:liquibase-core") */
     runtimeOnly("org.postgresql:postgresql")

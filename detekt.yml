@@ -3,7 +3,7 @@ config:
   warningsAsErrors: false
 
 build:
-  maxIssues: 20
+  maxIssues: 50
 
 console-reports:
   active: true

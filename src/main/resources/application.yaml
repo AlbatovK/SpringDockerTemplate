@@ -1,3 +1,7 @@
+proxy-server:
+  url: "https://fonneiymankittens.free.beeceptor.com"
+
+
 server:
   port: 8080
 
@@ -15,6 +19,11 @@ spring:
   redis:
     ssl:
       enabled: true
+
+    #host: 195.208.172.233
+    #port: 6380
+    #username: xak
+    #password: "&@gwx!tdm3v*r6avd7yimi"
 
     url: redis://default:9f9f10fb5a074d46aa1314be49ca2dbd@eu2-striking-mink-31589.upstash.io:31589
 
