@@ -47,6 +47,7 @@ class TestService {
                 !it.equals("id", true) &&
                         !it.contains("cvv", true) &&
                         !it.contains("cvs", true)
+                        && !it.contains("description")
             }.joinToString("") { "$it-${tree.findValue(it)}" }
 
         manager.getCache("Test")?.put(keyValueString, payload)

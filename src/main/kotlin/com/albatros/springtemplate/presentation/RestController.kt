@@ -1,13 +1,11 @@
 package com.albatros.springtemplate.presentation
 
-import com.albatros.springtemplate.domain.model.User
 import com.albatros.springtemplate.domain.model.sbp.SbpRequestModel
 import com.albatros.springtemplate.domain.model.visa.VisaRequestModel
 import com.albatros.springtemplate.domain.model.visa.VisaResponseModel
 import com.albatros.springtemplate.domain.model.webhook.CallbackClientRequest
 import com.albatros.springtemplate.domain.model.webhook.CallbackClientResponse
 import com.albatros.springtemplate.domain.service.TestService
-import com.albatros.springtemplate.domain.service.UserService
 import com.fasterxml.jackson.databind.json.JsonMapper
 import com.fasterxml.jackson.dataformat.xml.XmlMapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
@@ -21,18 +19,14 @@ import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import org.springframework.web.bind.annotation.RestController
 import java.io.IOException
+import java.util.*
+
 
 @RestController()
 class RestController {
 
     @Autowired
-    lateinit var service: UserService
-
-    @Autowired
     lateinit var test: TestService
-
-    @GetMapping("/get/all")
-    fun getAll() = service.getAll()
 
     @PutMapping(value = ["/visa"], consumes = ["application/json"])
     fun interceptVisaTest(@RequestBody visa: VisaRequestModel): VisaResponseModel? {
@@ -113,14 +107,4 @@ class RestController {
     fun startCallbackSbpTransaction(@RequestBody callbackClientRequest: CallbackClientRequest): CallbackClientResponse? {
         return test.getTestServiceCallbackResponse(callbackClientRequest)
     }
-
-
-    @GetMapping("/delete/{userId}")
-    fun deleteUser(@PathVariable userId: Long) = service.deleteById(userId)
-
-    @PostMapping("/save", consumes = ["application/json"])
-    fun saveUser(@RequestBody user: User) = service.saveUser(user)
-
-    @GetMapping("/get/{userId}")
-    fun getById(@PathVariable userId: Long) = service.getUserById(userId)
 }
