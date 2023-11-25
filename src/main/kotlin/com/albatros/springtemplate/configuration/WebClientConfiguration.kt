@@ -24,7 +24,6 @@ class WebClientConfiguration {
         const val TIMEOUT = 10000L
     }
 
-
     @Bean
     fun webClientWithTimeOut() = WebClient.builder()
         .exchangeStrategies(

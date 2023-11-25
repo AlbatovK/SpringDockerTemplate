@@ -46,6 +46,8 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("com.fasterxml.jackson.dataformat:jackson-dataformat-xml")
     implementation("org.codehaus.jackson:jackson-xc:1.9.9")
+    implementation("org.springframework.boot:spring-boot-starter-websocket")
+    implementation("org.springframework:spring-messaging")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     /* implementation("org.liquibase:liquibase-core") */
     runtimeOnly("org.postgresql:postgresql")
