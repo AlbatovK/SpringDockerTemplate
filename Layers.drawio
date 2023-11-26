@@ -1,9 +1,45 @@
-<mxfile host="app.diagrams.net" modified="2023-11-26T07:46:50.015Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0 (Edition Yx GX)" version="22.1.4" etag="KcYauOQD2_l5huBd-6xi" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-26T07:51:44.506Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36 OPR/104.0.0.0 (Edition Yx GX)" etag="4yE42IkS9QV-vtRdBBI8" version="22.1.4" type="github">
   <diagram name="Страница — 1" id="K80OKl24c6iJgq6V8inW">
-    <mxGraphModel>
+    <mxGraphModel dx="1062" dy="612" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="srixCyhe38zo3VG6LWj0-1" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;Presentation&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="280" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-3" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Controllers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Socket interfaces&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-5" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Webhook&lt;br&gt;handlers&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="370" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-6" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;Domain&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="490" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-7" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Domain objects&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-8" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;Cache logic&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-9" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Data access logic&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="590" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-10" value="&lt;span style=&quot;font-size: 17px;&quot;&gt;Data&lt;/span&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="707" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-11" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Dtos&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="807" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-12" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 19px;&quot;&gt;Drivers, WebClient&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="288" y="807" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="srixCyhe38zo3VG6LWj0-13" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Data source configs&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="474" y="807" width="120" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
