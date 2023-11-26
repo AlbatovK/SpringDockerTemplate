@@ -27,7 +27,7 @@
 ## Список эндпоинтов
 * [/visa - принимает Json, ровно по форме /visa из коллекции Postman из ТЗ](https://springdockertemplate.onrender.com/visa)
 * [/master, принимает Xml, ровно по форме /master из коллекции Postman из ТЗ](https://springdockertemplate.onrender.com/master)
-* [/test - может принимать как Json, так и Xml, парсит поля и кэширует по возможным согласно описанию функционала полям, выдает ответ в том же формате, в котором написан запрос](https://springdockertemplate.onrender.com/test)
+* [/test - может принимать как Json, так и Xml, парсит поля и кэширует по возможным согласно описанию функционала полям, выдает ответ в том же формате, указанном в заголовках (может быть и XML и JSON)](https://springdockertemplate.onrender.com/test)
 
 ### Коллекция Postman для тестирования API
 ```json
