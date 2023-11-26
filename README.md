@@ -52,9 +52,9 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\n \"method\": \"payment\",\n \"params\": {\n    \"card_holder_name\": \"CARDHOLDER NAME\",\n    \"card_number\": \"4278011111275400\",\n    \"card_expire\": \"2702\",\n    \"card_cvc\": \"067\",\n    \"amount\": \"1000\",\n    \"description\": \"Month subscription\",\n    \"redirect_url\": \"https://shop.merchant.com/order/23\"\n  },\n  \"id\": \"{{$randomUUID}}\"\n}"
+          "raw": "// Проверка эндпоинта /visa\n\n{\n    \"method\": \"aи\",\n    \"params\": {\n        \"card_holder_name\": \"CARDHOLDER NAME\",\n        \"card_number\": \"4278011111275400\",\n        \"card_expire\": \"2702\",\n        \"card_cvc\": \"067\",\n        \"amount\": \"1000\",\n        \"description\": \"Month subscription\",\n        \"redirect_url\": \"https://shop.merchant.com/order/23\"\n    },\n    \"id\": \"4mu_id\"\n}"
         },
-        "url": "https://qiwi-hackathon.free.beeceptor.com/visa"
+        "url": "https://springdockertemplate.onrender.com/visa"
       },
       "response": []
     },
@@ -71,9 +71,9 @@
         ],
         "body": {
           "mode": "raw",
-          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n  <request>\n\t<pg_card_number>5266886676134311</pg_card_number>\n\t<pg_description>Оплата брони</pg_description>\n\t<pg_cardholder>Ivan Ivanov</pg_cardholder>\n    <pg_expire_date>0128</pg_expire_date>\n    <pg_cvv>555</pg_cvv>\n  </request>"
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n  <request><!--Проверка эндпоинта /master -->\n\t<pg_card_number>5266886676134311</pg_card_number>\n\t<pg_description>Оплата брони</pg_description>\n\t<pg_cardholder>Ivan Ivanov</pg_cardholder>\n    <pg_expire_date>0128</pg_expire_date>\n    <pg_cvv>55551</pg_cvv>\n  </request>"
         },
-        "url": "https://qiwi-hackathon.free.beeceptor.com/master/{{$randomUUID}}"
+        "url": "https://springdockertemplate.onrender.com/master/{{$randomUUID}}"
       },
       "response": []
     },
@@ -86,7 +86,7 @@
           "mode": "raw",
           "raw": ""
         },
-        "url": "https://fonneiymankittens.free.beeceptor.com/"
+        "url": "https://springdockertemplate.onrender.com/"
       },
       "response": []
     },
@@ -121,18 +121,18 @@
         "header": [
           {
             "key": "Accept",
-            "value": "application/xml",
+            "value": "application/json",
             "type": "text"
           },
           {
             "key": "Content-Type",
-            "value": "application/json",
+            "value": "application/xml",
             "type": "text"
           }
         ],
         "body": {
           "mode": "raw",
-          "raw": "{\r\n    \"method\": \"payment\",\r\n    \"params\": {\r\n        \"card_holder_name\": \"CARDHOLDER NAME\",\r\n        \"card_number\": \"4278011111275400\",\r\n        \"card_expire\": \"2702\",\r\n        \"card_cvc\": \"067\",\r\n        \"amount\": \"1000\",\r\n        \"description\": \"Month subscription\",\r\n        \"redirect_url\": \"https://shop.merchant.com/order/23\"\r\n    },\r\n    \"id\": \"4490d1a0-fd21-44b6-84cc-a72d17b1c962\"\r\n}"
+          "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<request>\r\n    <a>\r\n        <b>Helllo</b>\r\n    </a><!-- Проверка метода с любой структурой тестовых запросов, в данном случае определяется по заголовком Accept и Content-type -->\r\n    <pg_description>\r\n        <client>\r\n            <name>Name</name>\r\n            <surname>Surname</surname>\r\n        </client>\r\n    </pg_description>\r\n    <pg_cardholder>Ivan Ivanov</pg_cardholder>\r\n</request>"
         },
         "url": "https://springdockertemplate.onrender.com/test"
       },
